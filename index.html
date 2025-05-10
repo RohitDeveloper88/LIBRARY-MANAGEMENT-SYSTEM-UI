@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Library Management System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-secondary">Sign In</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Next Favorite Book</h1>
+                <p>Browse our extensive collection of books and borrow them with just a few clicks.</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Search for books, authors, or categories...">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Browse Books</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Books in library">
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-books">
+        <div class="container">
+            <h2>Featured Books</h2>
+            <div class="book-grid" id="featured-books-grid">
+                <!-- Books will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="fiction">
+                    <div class="category-icon">📚</div>
+                    <h3>Fiction</h3>
+                    <p>Explore imaginative and creative narratives</p>
+                </div>
+                <div class="category-card" data-category="non-fiction">
+                    <div class="category-icon">🧠</div>
+                    <h3>Non-Fiction</h3>
+                    <p>Discover factual and informative content</p>
+                </div>
+                <div class="category-card" data-category="science">
+                    <div class="category-icon">🔬</div>
+                    <h3>Science</h3>
+                    <p>Learn about scientific discoveries and theories</p>
+                </div>
+                <div class="category-card" data-category="history">
+                    <div class="category-icon">🏛️</div>
+                    <h3>History</h3>
+                    <p>Explore events and people from the past</p>
+                </div>
+                <div class="category-card" data-category="biography">
+                    <div class="category-icon">👤</div>
+                    <h3>Biography</h3>
+                    <p>Read about the lives of fascinating individuals</p>
+                </div>
+                <div class="category-card" data-category="children">
+                    <div class="category-icon">🧸</div>
+                    <h3>Children's Books</h3>
+                    <p>Engaging stories for young readers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Library Management System</h3>
+                    <p>Your one-stop solution for managing and borrowing books.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@library.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Library St, Booktown</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Library Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-book-details">
+                <!-- Book details will be added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
